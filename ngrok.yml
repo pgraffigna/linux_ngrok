@@ -1,0 +1,11 @@
+---
+#Configuracion de alias para los tuneles
+authtoken: token
+
+tunnels:
+  nginx_test:
+    proto: http
+    addr: 80
+    auth: USER:PASS
+
+#ngrok start nginx_test

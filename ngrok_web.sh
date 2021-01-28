@@ -33,6 +33,6 @@ echo -e "\n${yellowColour}Autenticando ${endColour}"
 ngrok authtoken "$TOKEN"
 
 echo -e "\n${greenColour}Iniciando el tunel SSH ${endColour}"
-ngrok tcp 22
+ngrok http 80
 
 fi
