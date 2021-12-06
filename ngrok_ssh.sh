@@ -15,7 +15,7 @@ function ctrl_c(){
 read -p "$(echo -e ${yellowColour}Ingresa el token ${endColour})" TOKEN
 
 if [ -z "$TOKEN" ]
-then 
+then
 echo -e "${redColour}No ingresaste el token!!!! ${endColour}"
 exit 1
 
@@ -34,5 +34,4 @@ ngrok authtoken "$TOKEN"
 
 echo -e "\n${greenColour}Iniciando el tunel SSH ${endColour}"
 ngrok tcp 22
-
 fi
